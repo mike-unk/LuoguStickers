@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "洛谷表情",
+    "version": "1.0.0.1",
+    "description": "一款给洛谷犇犇添加表情的扩展程序",
+    "browser_action": {
+        "default_icon": "images/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.luogu.com.cn/"
+            ],
+            "js": [
+                "js/luogu_biaoqing_benben.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://www.luogu.com.cn/"
+            ],
+            "js": [
+                "js/textarea.js"
+            ]
+        },
+        {
+            "matches": [
+                "*://www.luogu.com.cn/"
+            ],
+            "js": [
+                "js/biaoqing.js"
+            ]
+        }
+    ]
+}
